@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programming Background</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1618388810903-840bb0d15ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    transition: font-size 0.3s;
+  }
+
+  h1:hover {
+    font-size: 2rem;
+  }
+
+  .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .footer h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .subheader {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px; 
+  }
+
+  .subheader h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 20px; 
+    border: 1px solid white; 
+    border-radius: 5px; 
+    transition: font-size 0.3s, transform 0.3s; 
+  }
+
+  .subheader h2:hover {
+    font-size: 1.2rem;
+    transform: scale(1.1); 
+  }
+
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stars img {
+    width: 20px;
+    height: 20px;
+    animation: twinkle 5s infinite, drift 10s infinite;
+    position: absolute;
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(50px);
+    }
+  }
+
+  @keyframes drift {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100vw - 20px));
+    }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Coding Allstar CSS Developer</h1>
+  <div class="subheader">
+    <h2>CSS</h2>
+    <h2>Information</h2>
+    <h2>About</h2>
+  </div>
+</div>
+<div class="content">
+  <h1>CSS Developer Position</h1>
+  <p>Do the best you can, reason and analyze. Good luck to all our developers.</p>
+</div>
+<div class="footer">
+  <h1>2023 Zeynep Altintas</h1>
+</div>
+<div class="stars">
+  <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 10%; left: 10%;">
+    <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 20%; left: 15%;">
+      <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 30%; left: 20%;">
+        <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 40%; left: 25%;">
+          <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 50%; left: 30%;">
+            <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 60%; left: 35%;">
+              <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 70%; left: 50%;">
+                <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 80%; left: 60%;">
+                  <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 90%; left: 70%;">
+                    <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 55%; left: 80%;">
+                      <img src="https://www.svgrepo.com/show/13693/star.svg" alt="Star"style="top: 25%; left: 90%;">  
+</div>
+</body>
+</html>
